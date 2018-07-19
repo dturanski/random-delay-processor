@@ -33,4 +33,21 @@ public class TestProcessorApplication {
 		}
 		return "unknown";
 	}
+
+
+	//@ServiceActivator(inputChannel = Processor.INPUT, outputChannel = Processor.OUTPUT)
+	//public Message transform(Message<?> message) {
+	//	try {
+	//		Thread.sleep(new Long(random.nextInt(3000)));
+	//	}
+	//	catch (InterruptedException e) {
+	//		e.printStackTrace();
+	//	}
+	//	if (message.getHeaders().containsKey("correlationId")) {
+	//
+	//		return new GenericMessage<>((String) message.getHeaders().get("correlationId"));
+	//	}
+	//	return new GenericMessage<>("unknown");
+	//}
+
 }
